@@ -1,0 +1,70 @@
+/* Todo.css */
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.todo-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.task-text {
+  flex: 1;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+  font-size: 1.2rem; /* Increased font size */
+}
+
+.task-text:hover {
+  color: #6a11cb;
+}
+
+.todo-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.mark-button,
+.delete-button {
+  padding: 8px 16px;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.mark-button {
+  background-color: #3498db; /* Blue color for mark button */
+}
+
+.mark-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+}
+
+.delete-button {
+  background-color: #e74c3c; /* Red color for delete button */
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+  transform: translateY(-2px);
+}
+
+.mark-button:active,
+.delete-button:active {
+  transform: translateY(0);
+}
